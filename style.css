@@ -1,5 +1,5 @@
   body{
-    background-color: lightgreen;
+    background-color: yellow;
     font-family: arial;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
 
   @media (max-width: 600px) {
   .todoList {
-    display: flex;
+   
     gap: 3rem;
   }
   .todoList > button{
