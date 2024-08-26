@@ -1,0 +1,100 @@
+  body{
+    background-color: lightgreen;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .todoName,  .dueDate, .addTodo {
+    width:200px;
+    padding: 10px;
+  }
+
+  .addTodo {
+    width: 100px;
+    height: 42px;
+    padding: 12px;
+    border-style: none;
+    background-color: rgb(95, 226, 43);
+  }
+
+  .todoList{
+    display:grid;
+
+    grid-template-columns: 230px 228px 100px; 
+    margin-top: 1rem;
+    column-gap: 0.2rem;
+    
+    
+  }
+
+  .showTodo{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 2vh 0px 2vh;
+    
+    column-gap: 1px;
+  }
+
+
+
+  .todoList > button{
+    max-width: 100px;
+    height: 42px;
+    padding: 12px;
+    border-style: none;
+    background-color:darkred;
+    color: white;
+  }
+
+  .todoList :first-child {
+    word-wrap: break-word;
+    text-align: justify;
+
+  }
+
+  .todoList > p {
+    margin: 0px;
+  }
+
+  .container{
+    display: flex;
+    column-gap: 0.5rem;
+  }
+
+  .showTodo > p{
+    word-wrap: break-word;
+    text-align: justify;
+
+  }
+
+  @media (max-width: 600px) {
+  .todoList {
+    display: flex;
+    gap: 3rem;
+  }
+  .todoList > button{
+    width: 100px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom:20px;
+    
+  }
+
+  .container > .addTodo{
+  
+    width: 320px;
+  }
+  .todoName, .dueDate{
+    width: 297px;
+
+  }
+  }
+
+
+
+
